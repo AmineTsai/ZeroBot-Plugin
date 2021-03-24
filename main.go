@@ -20,7 +20,7 @@ func init() {
 	})
 	log.SetLevel(log.DebugLevel)
 
-	setutime.CACHEGROUP = 868047498                       // 涩图缓冲群，必须修改
+	setutime.CACHEGROUP = 970370596                       // 涩图缓冲群，必须修改
 	setutime.PoolList = []string{"涩图", "二次元", "风景", "车万"} // 涩图类型，可以不修改
 }
 
@@ -35,7 +35,7 @@ func main() {
 	zero.Run(zero.Config{
 		NickName:      []string{"bot"},
 		CommandPrefix: "/",
-		SuperUsers:    []string{"825111790", "213864964"}, // 必须修改，否则无权限
+		SuperUsers:    []string{"870937975"}, // 必须修改，否则无权限
 		Driver: []zero.Driver{
 			driver.NewWebSocketClient("127.0.0.1", "6700", ""),
 		},
